@@ -7,12 +7,19 @@
     "type": "git",
     "url": "git+https://github.com/sebs/ethrain.git"
   },
+  "readme": "Readme.md",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "ethrain": "./bin/ethrain"
   },
+  "keywords": [
+    "ethereum",
+    "testnet",
+    "faucet",
+    "cli"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
