@@ -1,6 +1,6 @@
 {
   "name": "ethrain",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Command line Ethereum Testnet Faucet. gets you ether on the ethereum testnet (morden)",
   "main": "index.js",
   "repository": {
