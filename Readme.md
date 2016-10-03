@@ -34,5 +34,5 @@ Testnet rained 51383 finney on 0x......9
 ## Install
 
 ```
-npm install -gh ethrain
+npm install -g ethrain
 ```
