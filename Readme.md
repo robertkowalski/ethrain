@@ -5,15 +5,21 @@
 
 Uses a so called faucet to load your testnet account. Cli tool for convenience.
 
+## Usage
+
+
+
+
+Example: 
+```bash
+➜  ethrain git:(master) ✗ ethrain 0x......9
+Testnet rained 51383 finney on 0x......9
+```
+
+
+
 ## Install
 
 ```
 npm install -gh ethrain
-```
-
-[![npm version](https://badge.fury.io/js/ethrain.svg)](https://badge.fury.io/js/ethrain)
-
-```bash
-➜  ethrain git:(master) ✗ ethrain 0x......9
-Testnet rained 51383 finney on 0x......9
 ```
