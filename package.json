@@ -1,7 +1,7 @@
 {
   "name": "ethrain",
   "version": "1.2.2",
-  "description": "Gets you test ether on the ethereum morden test net",
+  "description": "Command line Ethereum Testnet Faucet. gets you ether on the ethereum testnet (morden)",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -17,7 +17,11 @@
     "ethereum",
     "testnet",
     "faucet",
-    "cli"
+    "ether",
+    "cli",
+    "web3",
+    "solc",
+    "testrpc"
   ],
   "author": "",
   "license": "ISC",
