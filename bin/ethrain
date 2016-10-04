@@ -23,5 +23,4 @@ request(base+program.args[0], function (error, response, body) {
   }
   console.log(body)
   process.exit(0);
-
-})
+});
