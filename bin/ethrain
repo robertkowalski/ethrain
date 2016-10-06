@@ -14,6 +14,12 @@ if (program.args.length < 1) {
   process.exit(1);
 }
 
+// print help with no args
+if (program.args[0].length > 256) {
+  console.error('invalid args length');
+  process.exit(1);
+}
+
 var base = 'http://icarus.parity.io/rain/';
 
 request(base+program.args[0], function (error, response, body) {
