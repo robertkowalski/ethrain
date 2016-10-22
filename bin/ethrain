@@ -2,7 +2,7 @@
 'use strict';
 var program = require('commander');
 var request = require('request');
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 // parse parameters and in general set them up
 program
   .description('Gets you test ether on the ethereum morden test net')
@@ -19,10 +19,10 @@ if (program.args[0].length > 256) {
   console.error('invalid args length');
   process.exit(1);
 }
-
-var base = 'http://icarus.parity.io/rain/';
-
-request(base+program.args[0], function (error, response, body) {
+https://morden-state.ether.camp/api/v1/accounts/107a876b283815ba899294f50392b46e22d76f43/gift
+var base = 'https://morden-state.ether.camp/api/v1/accounts/';
+var url = base + program.args[0].replace(/^0x/, '') + '/gift';
+request(url, function (error, response, body) {
   if (error || response.statusCode != 200) {
     return console.error(error, body);
     process.exit(1);
