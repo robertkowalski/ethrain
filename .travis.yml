@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - "6"
+- '6'
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   apt:
     sources:
@@ -11,3 +11,11 @@ addons:
     - g++-4.8
 notifications:
   email: false
+deploy:
+  provider: npm
+  email: sebs@2xs.org
+  api_key:
+    secure: yOSrLdVicaz7c9sA8EsNBJvGTcI5stKUZy5iuD2o16NFgT7yJIXXtw4RF4f4DRbQ5JbfuSpv+pgKJpySCjcmGERJf5QF6HSZ0bDCb2L3aXaeEbDv6Q25i22Psh079PP4fyy/T810qUcn4GdrlNNCALeL9EmNEC1QxeLBejcf33Cg01iMIC9fRxM5iw9273Kx4RSgOqlHEsvpwKGYz1VszlcU/u9/kw592+zUO3ynNgaWhrO63Oj8sVTSb/EDRuAnU6zPtL8KACO7JxF2cvzZbvsZRaMpv6GXPYVGjKV3A0iJ9z6ykBnRJHMtdbEG4q1WqPJUq4PsLTO7MzbmUw/6MShDPtTrT8uj1oP06K+QYFbOFyqfwYZgV9JcKnGfNh2OJ16irDi0XHbMQohL+lUZT8cg9GeSkwt5btRDc/3ahjaLEjnrS28ksqEbr7z+q0Jh1rrgBwmlugSesODABFj+oh0IdGbPGaktFlAVLNvzEEoCGF6vngusmOVaLx9yKlIk/ZdMRzTU1WnuYHPvBU2y44c7Z1r30Ka53z0GoArnPhvhG5lDJ8ndU9XxCiVPjHB0VeSNyvjPjdLWNMRhF0RDDTTZlB5kEb7nKhbJXpL3gY61VrvmXq4o9zVAaIiknTNnYITDPyis1FJe94v+ms+z0nJumlUHnDkkEtLxVa4Y908=
+  on:
+    tags: true
+    repo: sebs/ethrain
