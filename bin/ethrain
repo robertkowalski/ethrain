@@ -11,6 +11,8 @@ program
 
 // print help with no args
 if (program.args.length < 1) {
+  console.error('no argument given')
+  program.outputHelp();
   process.exit(1);
 }
 
