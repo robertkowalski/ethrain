@@ -19,7 +19,7 @@ if (program.args[0].length > 256) {
   console.error('invalid args length');
   process.exit(1);
 }
-https://morden-state.ether.camp/api/v1/accounts/107a876b283815ba899294f50392b46e22d76f43/gift
+// https://morden-state.ether.camp/api/v1/accounts/107a876b283815ba899294f50392b46e22d76f43/gift
 var base = 'https://morden-state.ether.camp/api/v1/accounts/';
 var url = base + program.args[0].replace(/^0x/, '') + '/gift';
 request(url, function (error, response, body) {
